@@ -1,0 +1,267 @@
+.card {
+    $root: &;
+    padding: 20px;
+    background-color: #333c47;
+    color: white;
+    position: relative;
+
+    &--finished {
+
+    }
+
+    &__line {
+        width: 0;
+        height: 2px;
+        display: block;
+        background: white;
+        transition: width 0.5s ease;
+        position: absolute;
+        left: 0;
+        bottom: 0;
+
+        #{$root}:hover & {
+            width: 100%;
+        }
+    }
+
+    &__header {
+        display: flex;
+    }
+
+    &__date {
+        padding-right: 10px;
+        margin-right: 15px;
+        border-right: 1px solid;
+    }
+
+    &__day {
+        margin: 0;
+        font-size: 3rem;
+        font-weight: 700;
+        line-height: 1;
+    }
+
+    &__title {
+        font-weight: 200;
+        line-height: 1.4;
+        width: 100%;
+    }
+
+    &__month {
+        &::after {
+            content: '';
+            display: block;
+            background-size: contain;
+            width: 50px;
+            height: 30px;
+            background-repeat: no-repeat;
+            margin-top: 10px;
+
+            .card--australia & {
+                background-image: url('./../images/flags/australia.svg');
+            }
+
+            .card--austria & {
+                background-image: url('./../images/flags/austria.svg');
+            }
+
+            .card--azerbaijan & {
+                background-image: url('./../images/flags/azerbaijan.svg');
+            }
+
+            .card--bahrain & {
+                background-image: url('./../images/flags/bahrain.svg');
+            }
+
+            .card--belgium & {
+                background-image: url('./../images/flags/belgium.svg');
+            }
+
+            .card--brazil & {
+                background-image: url('./../images/flags/brazil.svg');
+            }
+
+            .card--canada & {
+                background-image: url('./../images/flags/canada.svg');
+            }
+
+            .card--china & {
+                background-image: url('./../images/flags/china.svg');
+            }
+
+            .card--france & {
+                background-image: url('./../images/flags/france.svg');
+            }
+
+            .card--germany & {
+                background-image: url('./../images/flags/germany.svg');
+            }
+
+            .card--hungary & {
+                background-image: url('./../images/flags/hungary.svg');
+            }
+
+            .card--italy & {
+                background-image: url('./../images/flags/italy.svg');
+            }
+
+            .card--japan & {
+                background-image: url('./../images/flags/japan.svg');
+            }
+
+            .card--mexico & {
+                background-image: url('./../images/flags/mexico.svg');
+            }
+
+            .card--monaco & {
+                background-image: url('./../images/flags/monaco.svg');
+            }
+
+            .card--russia & {
+                background-image: url('./../images/flags/russia.svg');
+            }
+
+            .card--singapore & {
+                background-image: url('./../images/flags/singapore.svg');
+            }
+
+            .card--spain & {
+                background-image: url('./../images/flags/spain.svg');
+            }
+
+            .card--uae & {
+                background-image: url('./../images/flags/uae.svg');
+            }
+
+            .card--uk & {
+                background-image: url('./../images/flags/uk.svg');
+            }
+
+            .card--usa & {
+                background-image: url('./../images/flags/usa.svg');
+            }
+        }
+    }
+
+    &__round {
+        position: absolute;
+        background: white;
+        color: #333c46;
+        padding: 5px;
+        line-height: 1;
+        font-weight: 700;
+        top: 0;
+        right: 0;
+        transition: font-size 0.25s ease;
+
+        #{$root}:hover & {
+            font-size: 1.5rem;
+        }
+    }
+
+    &__race {
+        font-weight: 500;
+        font-size: 18px;
+    }
+
+    &__circuit {
+        font-size: 14px;
+    }
+
+    &__country {
+        font-size: 14px;
+        color: #9fa2a7;
+    }
+
+    &__track {
+        height: 80px;
+        width: 100%;
+        background-size: contain;
+        background-repeat: no-repeat;
+        margin-top: 20px;
+
+        &--australia {
+            background-image: url('./../images/circuits/australia.svg');
+        }
+
+        &--austria {
+            background-image: url('./../images/circuits/austria.svg');
+        }
+
+        &--azerbaijan {
+            background-image: url('./../images/circuits/azerbaijan.svg');
+        }
+
+        &--bahrain {
+            background-image: url('./../images/circuits/bahrain.svg');
+        }
+
+        &--belgium {
+            background-image: url('./../images/circuits/belgium.svg');
+        }
+
+        &--brazil {
+            background-image: url('./../images/circuits/brazil.svg');
+        }
+
+        &--canada {
+            background-image: url('./../images/circuits/canada.svg');
+        }
+
+        &--china {
+            background-image: url('./../images/circuits/china.svg');
+        }
+
+        &--france {
+            background-image: url('./../images/circuits/france.svg');
+        }
+
+        &--germany {
+            background-image: url('./../images/circuits/germany.svg');
+        }
+
+        &--hungary {
+            background-image: url('./../images/circuits/hungary.svg');
+        }
+
+        &--italy {
+            background-image: url('./../images/circuits/italy.svg');
+        }
+
+        &--japan {
+            background-image: url('./../images/circuits/japan.svg');
+        }
+
+        &--mexico {
+            background-image: url('./../images/circuits/mexico.svg');
+        }
+
+        &--monaco {
+            background-image: url('./../images/circuits/monaco.svg');
+        }
+
+        &--russia {
+            background-image: url('./../images/circuits/russia.svg');
+        }
+
+        &--singapore {
+            background-image: url('./../images/circuits/singapore.svg');
+        }
+
+        &--spain {
+            background-image: url('./../images/circuits/spain.svg');
+        }
+
+        &--uae {
+            background-image: url('./../images/circuits/uae.svg');
+        }
+
+        &--uk {
+            background-image: url('./../images/circuits/uk.svg');
+        }
+
+        &--usa {
+            background-image: url('./../images/circuits/usa.svg');
+        }
+    }
+}

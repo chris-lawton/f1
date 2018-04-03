@@ -1,0 +1,76 @@
+table {
+    border-collapse: collapse;
+    color: #cacaca;
+    background: linear-gradient(to bottom, #343940 0%,#2C2F35 100%);
+    margin-top: 20px;
+
+    thead {
+        background-color: #282829;
+
+        th {
+            text-align: left;
+            padding: 10px;
+            font-weight: 200;
+        }
+    }
+
+    tbody {
+        tr {
+            &:nth-child(even){
+                background-color: #cccccc29;
+            }
+
+            &:nth-child(odd){
+                background-color: #cccccc14;
+            }
+
+            &.dnf {
+                background-color: #3A3D43;
+            }
+
+            td {
+                padding: 10px;
+            }
+
+            .ferrari {
+                border-left: 4px solid #da0a16;
+            }
+
+            .mercedes {
+                border-left: 4px solid #22d2be;
+            }
+
+            .red_bull {
+                border-left: 4px solid #244afb;
+            }
+
+            .mclaren {
+                border-left: 4px solid #fd8625;
+            }
+
+            .renault {
+                border-left: 4px solid #fef336;
+            }
+
+            .force_india {
+                border-left: 4px solid #f397c8;
+            }
+
+            .sauber {
+                border-left: 4px solid #99040c;
+            }
+
+            .williams {
+                border-left: 4px solid white;
+            }
+
+            .toro_rosso {
+                border-left: 4px solid #4b9dfc;
+            }
+
+            .haas {
+                border-left: 4px solid #828282;
+            }
+        }
+    }
+}

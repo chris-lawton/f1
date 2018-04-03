@@ -1,0 +1,90 @@
+.flag {
+    width: 160px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin-right: 20px;
+
+    &--australia {
+        background-image: url('./../images/flags/australia.svg');
+    }
+
+    &--austria {
+        background-image: url('./../images/flags/austria.svg');
+    }
+
+    &--azerbaijan {
+        background-image: url('./../images/flags/azerbaijan.svg');
+    }
+
+    &--bahrain {
+        background-image: url('./../images/flags/bahrain.svg');
+    }
+
+    &--belgium {
+        background-image: url('./../images/flags/belgium.svg');
+    }
+
+    &--brazil {
+        background-image: url('./../images/flags/brazil.svg');
+    }
+
+    &--canada {
+        background-image: url('./../images/flags/canada.svg');
+    }
+
+    &--china {
+        background-image: url('./../images/flags/china.svg');
+    }
+
+    &--france {
+        background-image: url('./../images/flags/france.svg');
+    }
+
+    &--germany {
+        background-image: url('./../images/flags/germany.svg');
+    }
+
+    &--hungary {
+        background-image: url('./../images/flags/hungary.svg');
+    }
+
+    &--italy {
+        background-image: url('./../images/flags/italy.svg');
+    }
+
+    &--japan {
+        background-image: url('./../images/flags/japan.svg');
+    }
+
+    &--mexico {
+        background-image: url('./../images/flags/mexico.svg');
+    }
+
+    &--monaco {
+        background-image: url('./../images/flags/monaco.svg');
+    }
+
+    &--russia {
+        background-image: url('./../images/flags/russia.svg');
+    }
+
+    &--singapore {
+        background-image: url('./../images/flags/singapore.svg');
+    }
+
+    &--spain {
+        background-image: url('./../images/flags/spain.svg');
+    }
+
+    &--uae {
+        background-image: url('./../images/flags/uae.svg');
+    }
+
+    &--uk {
+        background-image: url('./../images/flags/uk.svg');
+    }
+
+    &--usa {
+        background-image: url('./../images/flags/usa.svg');
+    }
+}
