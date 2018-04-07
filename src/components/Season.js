@@ -20,12 +20,6 @@ class Season extends React.Component {
                 this.setState({
                     seasonData: response.data.MRData.RaceTable.Races
                 });
-                return axios.get('https://ergast.com/api/f1/2018/results/1.json');
-            })
-            .then(res => {
-                this.setState({
-                    winners: res.data.MRData.RaceTable.Races[0].Results
-                });
             })
             .catch(error => console.log(error));
     }
@@ -33,7 +27,7 @@ class Season extends React.Component {
     render() {
         return (
             <div className="grid">
-                {this.state.seasonData.map(race => {
+                {this.state.seasonData.map((race, index) => {
                     return (
                         <NavLink
                             to={race.round}

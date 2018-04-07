@@ -12,3 +12,7 @@ export function compareDate(date) {
     const result = new Date() > new Date(date);
     return result ? 'card--finished' : '';
 }
+
+export function isDateBeforeToday(date) {
+    return new Date(date.toString()) < new Date(new Date().toString());
+}
