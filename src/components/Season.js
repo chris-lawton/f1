@@ -8,8 +8,7 @@ class Season extends React.Component {
         super(props);
 
         this.state = {
-            seasonData: [],
-            winners: []
+            seasonData: []
         };
     }
 
@@ -26,43 +25,45 @@ class Season extends React.Component {
 
     render() {
         return (
-            <div className="grid">
-                {this.state.seasonData.map((race, index) => {
-                    return (
-                        <NavLink
-                            to={race.round}
-                            key={race.round}
-                            className={`card card--${race.Circuit.Location.country.toLowerCase()} ${compareDate(race.date)}`}
-                        >
-                            <div className="card__header">
-                                <div className="card__date">
-                                    <p className="card__day">
-                                        {parseDay(race.date)}
-                                    </p>
-                                    <p className="card__month">
-                                        {parseMonth(race.date)}
-                                    </p>
+            <div>
+                <div className="grid">
+                    {this.state.seasonData.map(race => {
+                        return (
+                            <NavLink
+                                to={race.round}
+                                key={race.round}
+                                className={`card card--${race.Circuit.Location.country.toLowerCase()} ${compareDate(race.date)}`}
+                            >
+                                <div className="card__header">
+                                    <div className="card__date">
+                                        <p className="card__day">
+                                            {parseDay(race.date)}
+                                        </p>
+                                        <p className="card__month">
+                                            {parseMonth(race.date)}
+                                        </p>
+                                    </div>
+                                    <div className="card__title">
+                                        <p className="card__race">
+                                            {race.raceName}
+                                        </p>
+                                        <p className="card__circuit">
+                                            {race.Circuit.circuitName}
+                                        </p>
+                                        <p className="card__country">
+                                            {race.Circuit.Location.country}
+                                        </p>
+                                        <div
+                                            className={`card__track card__track--${race.Circuit.Location.country.toLowerCase()}`}
+                                        />
+                                    </div>
                                 </div>
-                                <div className="card__title">
-                                    <p className="card__race">
-                                        {race.raceName}
-                                    </p>
-                                    <p className="card__circuit">
-                                        {race.Circuit.circuitName}
-                                    </p>
-                                    <p className="card__country">
-                                        {race.Circuit.Location.country}
-                                    </p>
-                                    <div
-                                        className={`card__track card__track--${race.Circuit.Location.country.toLowerCase()}`}
-                                    />
-                                </div>
-                            </div>
-                            <p className="card__round">{race.round}</p>
-                            <div className="card__line" />
-                        </NavLink>
-                    );
-                })}
+                                <p className="card__round">{race.round}</p>
+                                <div className="card__line" />
+                            </NavLink>
+                        );
+                    })}
+                </div>
             </div>
         );
     }
