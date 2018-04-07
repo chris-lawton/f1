@@ -183,6 +183,9 @@ h3, h4 {
   background-size: contain;
   background-repeat: no-repeat;
   margin-right: 20px; }
+  .flag--small {
+    height: 20px;
+    width: 40px; }
   .flag--australia {
     background-image: url("./../images/flags/australia.svg"); }
   .flag--austria {
@@ -276,3 +279,9 @@ table {
   .wrapper--race-header {
     display: flex;
     padding: 0; }
+  .wrapper--flags {
+    padding: 0;
+    display: grid;
+    grid-template-columns: repeat(21, 55px);
+    justify-content: space-between;
+    margin-bottom: 20px; }

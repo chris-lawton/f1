@@ -5,4 +5,12 @@
         display: flex;
         padding: 0;
     }
+
+    &--flags {
+        padding: 0;
+        display: grid;
+        grid-template-columns: repeat(21, 55px);
+        justify-content: space-between;
+        margin-bottom: 20px;
+    }
 }
