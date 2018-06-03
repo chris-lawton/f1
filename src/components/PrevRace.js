@@ -51,7 +51,7 @@ class PrevRace extends React.Component {
                                     className={`${driver.Constructor.constructorId} ${driver.Time ? '' : 'dnf'}`}
                                 >
                                     <td>{driver.position}.</td>
-                                    <td className={driver.Constructor.name.toLowerCase()}></td>
+                                    <td className={driver.Constructor.constructorId}></td>
                                     <td>
                                         {driver.Driver.givenName}{' '}
                                         {driver.Driver.familyName}
