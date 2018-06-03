@@ -231,8 +231,14 @@ h3, h4 {
 
 .grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(1, 1fr);
   grid-gap: 20px; }
+  @media (min-width: 580px) {
+    .grid {
+      grid-template-columns: repeat(2, 1fr); } }
+  @media (min-width: 900px) {
+    .grid {
+      grid-template-columns: repeat(3, 1fr); } }
 
 table {
   border-collapse: collapse;
@@ -284,4 +290,5 @@ table {
     display: grid;
     grid-template-columns: repeat(21, 55px);
     justify-content: space-between;
-    margin-bottom: 20px; }
+    margin-bottom: 20px;
+    overflow: scroll; }
