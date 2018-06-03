@@ -60,7 +60,7 @@ class PrevRace extends React.Component {
                                     <td>{driver.Constructor.name}</td>
                                     <td>{driver.laps}</td>
                                     <td>
-                                        {driver.Time ? driver.Time.time : 'DNF'}
+                                        {driver.Time ? driver.Time.time : driver.status}
                                     </td>
                                     <td>{driver.points}</td>
                                 </tr>
